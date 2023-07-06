@@ -1,0 +1,12 @@
+{
+  "name": "okeyPost",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev-c": "cd ./client && ng serve "
+  },
+  "dependencies": {
+    "@angular/cli": "^16.1.3"
+  }
+}

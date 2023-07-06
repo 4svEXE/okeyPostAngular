@@ -1,0 +1,65 @@
+<button
+  class="green-button nav-container toggle-header block"
+  (click)="isActiveHeader = !isActiveHeader"
+>
+  <!-- <input class="checkbox" type="checkbox" name="" id="" /> -->
+  <div class="hamburger-lines" [class.active]="isActiveHeader">
+    <span class="line line1"></span>
+    <span class="line line2"></span>
+    <span class="line line3"></span>
+  </div>
+</button>
+
+<header
+  class="w-screen flex items-center flex-col justify-around xl:flex-row"
+  [class.active]="isActiveHeader"
+>
+  <div routerLink="/" class="logo">
+    <img src="assets/header/logo.svg" alt="logo" />
+  </div>
+
+  <nav>
+    <a href="#" routerLink="/" [routerLinkActive]="['active']">
+      Як купувати
+    </a>
+
+    <a href="#" routerLink="/sales" [routerLinkActive]="['active']">
+      Розпродажі
+    </a>
+
+    <a href="#" routerLink="/prices" [routerLinkActive]="['active']">
+      Ціни
+    </a>
+
+    <a href="#" routerLink="/help" [routerLinkActive]="['active']">
+      Допомога
+    </a>
+
+    <a href="#" routerLink="/bonuces" [routerLinkActive]="['active']">
+      Бонуси
+    </a>
+
+    <a href="#" routerLink="/blog" [routerLinkActive]="['active']">
+      Блог
+    </a>
+
+    <a href="#" routerLink="/shops" [routerLinkActive]="['active']">
+      Магазини
+    </a>
+  </nav>
+
+  <div class="controls flex">
+    <a (click)="togglePopup()" href="#" class="flex items-center">
+      <img src="assets/header/user.svg" alt="user" />
+      <span>Вхід</span>
+    </a>
+
+    <button class="green-button ml-10">
+      Зв’язатись з нами
+    </button>
+  </div>
+
+  <div class="popup-container">
+    <app-popup />
+  </div>
+</header>

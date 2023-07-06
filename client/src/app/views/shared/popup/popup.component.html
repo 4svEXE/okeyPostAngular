@@ -1,0 +1,10 @@
+<div class="popup" *ngIf="isActivePopup">
+  <div class="popup-body" [ngSwitch]="currentPopup">
+    <div (click)="togglePopup()" class="close-popup"></div>
+
+    <app-login-popup *ngSwitchDefault />
+    <app-register-popup *ngSwitchCase="'register'" />
+    <app-sms-code-popup *ngSwitchCase="'sms-code'" />
+    <app-password-recovery-popup *ngSwitchCase="'password-recovery'" />
+  </div>
+</div>

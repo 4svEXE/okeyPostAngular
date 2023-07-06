@@ -1,0 +1,42 @@
+<form action="" class="">
+  <h2>Выполните вход в ваш личный кабинет</h2>
+
+  <div class="flex flex-col mb-4">
+    <label for="phone">Номер телефона:</label>
+    <input type="text" name="phone" />
+  </div>
+
+  <div class="flex flex-col mb-4">
+    <label for="phone">Ваш email:</label>
+    <input type="text" name="email" />
+  </div>
+
+  <div class="flex flex-col mb-4">
+    <label for="phone">Ваш пароль:</label>
+    <input type="password" name="password" />
+  </div>
+
+  <p>
+    <a href="#" (click)="setCurrentPopup('password-recovery')">Відновлення паролю</a>
+    або
+    <a href="#" (click)="setCurrentPopup('register')">швидка регістрація</a>
+  </p>
+
+  <div class="flex justify-between mt-7">
+    <button class="green-button">
+      Увійти
+    </button>
+
+    <div class="flex">
+      <button>
+        <img src="assets/popup/Google.svg" alt="Google" />
+      </button>
+      <button>
+        <img src="assets/popup/Facebook.svg" alt="Facebook" />
+      </button>
+      <button>
+        <img src="assets/popup/VK.svg" alt="VK" />
+      </button>
+    </div>
+  </div>
+</form>

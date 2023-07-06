@@ -1,0 +1,20 @@
+<form action="" class="">
+  <h2>Введіть код із СМС для підтвердження</h2>
+
+  <div class="flex flex-col mb-4">
+    <label for="smsCode">Код із СМС:</label>
+    <input type="text" name="smsCode" />
+  </div>
+
+  <div class="flex justify-between items-center mt-7">
+    <button class="green-button">
+      Увійти з кодом
+    </button>
+
+    <p class="max-w-[50%]">
+      <a href="#" (click)="setCurrentPopup('login')">Вхід</a>
+      або
+      <a href="#" (click)="setCurrentPopup('register')">Регістрація</a>
+    </p>
+  </div>
+</form>

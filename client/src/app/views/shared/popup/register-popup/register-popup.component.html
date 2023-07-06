@@ -1,0 +1,38 @@
+<form action="" class="">
+  <h2>Почніть купувати в англійських магазинах</h2>
+
+  <div class="flex flex-col mb-4">
+    <label for="name">Ім'я:</label>
+    <input type="text" name="name" />
+  </div>
+
+  <div class="flex flex-col mb-4">
+    <label for="lastName">Прізвище:</label>
+    <input type="text" name="lastName" />
+  </div>
+
+  <div class="flex flex-col mb-4">
+    <label for="email">Email:</label>
+    <input type="email" name="email" />
+  </div>
+
+  <p>
+    Натискаючи кнопку ви погоджуєтесь із
+    <a href="#">правилами надання послуг</a>
+    та
+    <a href="#">політикою конфіденційності</a>
+  </p>
+
+  <div class="flex justify-between mt-7">
+    <button class="green-button mr-4">
+      Отримати адресу в UK
+    </button>
+
+    <div class="flex max-w-[40%] justify-end">
+      <p>
+        Вже зареєстровані?
+        <a href="#" (click)="setCurrentPopup('login')">Виконайте вхід</a>
+      </p>
+    </div>
+  </div>
+</form>
