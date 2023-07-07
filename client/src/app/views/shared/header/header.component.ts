@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { HeaderService } from "src/app/services/header.service";
 import { PopupService } from "src/app/services/popup.service";
 
 @Component({
@@ -11,10 +12,17 @@ export class HeaderComponent {
   currentPopup: string = "login";
   isActiveHeader: boolean = false;
 
-  constructor(private popupService: PopupService) {
+  constructor(
+    private headerService: HeaderService,
+    private popupService: PopupService
+  ) {
     this.popupService.data$.subscribe((data: any) => {
       this.isActivePopup = data.isActivePopup;
       this.currentPopup = data.currentPopup;
+    });
+
+    this.headerService.isActiveHeader$.subscribe((state: any) => {
+      this.isActiveHeader = state;
     });
   }
 

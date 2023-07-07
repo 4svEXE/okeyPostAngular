@@ -9,6 +9,10 @@ import { LoginPopupComponent } from './views/shared/popup/login-popup/login-popu
 import { RegisterPopupComponent } from './views/shared/popup/register-popup/register-popup.component';
 import { SmsCodePopupComponent } from './views/shared/popup/sms-code-popup/sms-code-popup.component';
 import { PasswordRecoveryPopupComponent } from './views/shared/popup/password-recovery-popup/password-recovery-popup.component';
+import { HomeComponent } from './views/pages/home/home.component';
+import { FirstScreenComponent } from './views/pages/home/first-screen/first-screen.component';
+import { HowProfitableComponent } from './views/pages/home/how-profitable/how-profitable.component';
+import { FooterComponent } from './views/shared/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +22,11 @@ import { PasswordRecoveryPopupComponent } from './views/shared/popup/password-re
     LoginPopupComponent,
     RegisterPopupComponent,
     SmsCodePopupComponent,
-    PasswordRecoveryPopupComponent
+    PasswordRecoveryPopupComponent,
+    HomeComponent,
+    FirstScreenComponent,
+    HowProfitableComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
