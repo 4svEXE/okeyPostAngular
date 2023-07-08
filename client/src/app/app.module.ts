@@ -13,6 +13,7 @@ import { HomeComponent } from './views/pages/home/home.component';
 import { FirstScreenComponent } from './views/pages/home/first-screen/first-screen.component';
 import { HowProfitableComponent } from './views/pages/home/how-profitable/how-profitable.component';
 import { FooterComponent } from './views/shared/footer/footer.component';
+import { ProfitableSwiperComponent } from './views/pages/home/how-profitable/profitable-swiper/profitable-swiper.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { FooterComponent } from './views/shared/footer/footer.component';
     HomeComponent,
     FirstScreenComponent,
     HowProfitableComponent,
-    FooterComponent
+    FooterComponent,
+    ProfitableSwiperComponent
   ],
   imports: [
     BrowserModule,
