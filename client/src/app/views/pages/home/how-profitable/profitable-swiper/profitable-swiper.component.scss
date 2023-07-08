@@ -1,0 +1,66 @@
+.grid-cell {
+  h3 {
+    color: var(--1, #1f2428);
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+  }
+
+  h2 {
+    color: #1f2428;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+
+    span {
+      color: rgba(1, 205, 125, 1);
+    }
+  }
+
+  .gray-box {
+    margin-top: 44px;
+    border-radius: 16px;
+    background: #f2f6fc;
+
+    display: flex;
+    align-items: center;
+    padding: 33px;
+
+    img {
+      width: 76px;
+      height: 54px;
+      margin-right: 28px;
+    }
+
+    .span {
+      color: var(--1, #1f2428);
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 24px;
+    }
+
+    .strong {
+      color: var(--1, #1f2428);
+      font-size: 26px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 36px;
+    }
+  }
+
+  .roubded-box {
+    margin: 20px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: var(--6, #f2f6fc);
+
+    img {
+      height: 300px;
+      transform: scale(1.2);
+    }
+  }
+}
