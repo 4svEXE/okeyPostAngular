@@ -1,6 +1,7 @@
-<carousel [loop]="true" [arrowsOutside]="true" [cellsToShow]="1" [height]="600">
+
+<carousel [loop]="true" [arrowsOutside]="true" [cellsToShow]="1" [height]="1000">
   <div class="carousel-cell">
-    <div class="grid grid-cols-3 w-full h-full border">
+    <div class="lg:grid flex flex-col-reverse lg:grid-cols-3 w-full h-full border container">
       <div class="grid-cell flex flex-col mt-20">
         <h3>Columbia Barlow Pass 550 Turbodown Jacket</h3>
 
@@ -12,13 +13,13 @@
               Ціна в Україні
             </span>
             <strong>
-              6399,00₴
+              6399,00₴ {{screenWidth}}px
             </strong>
           </div>
         </div>
       </div>
 
-      <div class="grid-cell flex flex-col mt-2">
+      <div class="grid-cell flex flex-col mt-2 lg:items-start items-center justify-center lg:justify-start">
         <div class="roubded-box flex justify-center items-center">
           <img
             src="assets/home/HowProfitable/swiper/products/ColumbiaBarlow.png"

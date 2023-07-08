@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   // border: 1px solid red;
 }
 // Fonts
@@ -13,6 +13,22 @@
 @import "./popup.scss";
 @import "./blue-box.scss";
 // Scss
+
+@media (max-width: 640px) {
+  .container {
+    max-width: 440px;
+  }
+}
+@media (max-width: 440px) {
+  .container {
+    max-width: 320px;
+  }
+}
+@media (max-width: 320px) {
+  .container {
+    max-width: 240px;
+  }
+}
 
 // Navigation & buttons
 a {
@@ -138,7 +154,8 @@ a {
     &:nth-child(odd) {
       border-left: 0;
     }
-    &:nth-child(3), &:nth-child(4) {
+    &:nth-child(3),
+    &:nth-child(4) {
       border-bottom: 0 solid #c0c9d7 !important;
     }
   }
@@ -152,10 +169,9 @@ a {
       border-bottom: 1px solid #c0c9d7 !important;
     }
 
-    &:last-child{
+    &:last-child {
       border: 0px;
     }
   }
-  
 }
 // Boxes

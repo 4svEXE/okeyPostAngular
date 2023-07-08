@@ -6,5 +6,6 @@ import { Component } from "@angular/core";
   styleUrls: ["./profitable-swiper.component.scss"],
 })
 export class ProfitableSwiperComponent {
-  images = [{ path: "assets/home/firstScreen.svg" }];
+  screenWidth = window.innerWidth
+  swiperHeight: number = 600;
 }
