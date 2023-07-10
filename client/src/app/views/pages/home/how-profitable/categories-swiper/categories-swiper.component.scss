@@ -1,0 +1,21 @@
+.category-item {
+    min-width: 180px;
+    transition: .3s;
+    cursor: pointer;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+
+  &.active {
+    background: var(--6, #f2f6fc);
+  }
+
+  &:hover {
+    background: var(--6, #f2f6fc90);
+  }
+
+  img{
+    height: 52px !important;
+    margin-left: 20px;
+  }
+}

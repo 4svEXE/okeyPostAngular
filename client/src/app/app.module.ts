@@ -16,6 +16,7 @@ import { FirstScreenComponent } from './views/pages/home/first-screen/first-scre
 import { HowProfitableComponent } from './views/pages/home/how-profitable/how-profitable.component';
 import { FooterComponent } from './views/shared/footer/footer.component';
 import { ProfitableSwiperComponent } from './views/pages/home/how-profitable/profitable-swiper/profitable-swiper.component';
+import { CategoriesSwiperComponent } from './views/pages/home/how-profitable/categories-swiper/categories-swiper.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ProfitableSwiperComponent } from './views/pages/home/how-profitable/pro
     FirstScreenComponent,
     HowProfitableComponent,
     FooterComponent,
-    ProfitableSwiperComponent
+    ProfitableSwiperComponent,
+    CategoriesSwiperComponent
   ],
   imports: [
     BrowserModule,

@@ -58,6 +58,11 @@
   border-radius: 50%;
   background: var(--6, #f2f6fc);
 
+  img {
+    width: 100%;
+    transform: scale(0.8);
+  }
+
   &.active {
     margin: 20px;
     width: 300px;
@@ -73,7 +78,33 @@
 .images-prew-next {
   display: flex;
   justify-content: space-between;
-  // background-color: red;
   height: 100px;
-  padding: 0 60px;
+
+  img{
+    min-width: 100px;
+    min-height: 100px;
+  }
+
+  .flex {
+    span {
+      color: var(--1, #1f2428);
+      text-align: center;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 24px;
+    }
+    strong {
+      color: #1f2428;
+      text-align: center;
+      font-size: 26px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 36px;
+
+      b{
+        color: rgba(1, 205, 125, 1);
+      }
+    }
+  }
 }

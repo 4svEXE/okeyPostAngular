@@ -6,13 +6,16 @@
   }
 }
 
-.container .swiper-responcive{
+.container .swiper-responcive {
   margin-bottom: 0px;
+
+  .carousel-arrow {
+    margin-top: 200px !important;
+    margin: 0 80px;
+  }
 }
 
 .carousel-arrow {
-  margin-top: 200px !important;
-
   &.carousel-arrow-prev {
     transform: rotate(180deg) !important;
     background-image: url("assets/home/HowProfitable/swiper/arrow.svg") !important;

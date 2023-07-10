@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
-
+import { Products } from "../../../../../db/products"
+import { Categories } from "../../../../../db/categories"
 @Component({
   selector: "app-profitable-swiper",
   templateUrl: "./profitable-swiper.component.html",
@@ -10,56 +11,22 @@ export class ProfitableSwiperComponent {
   swiperHeight: number = 1000;
 
   currentCategoty: string = "clothes";
-  products: any[] = [
-    {
-      name: "Columbia Barlow Pass 550 Turbodown Jacket",
-      image: "assets/home/HowProfitable/swiper/products/ColumbiaBarlow.png",
-      priceUk: 80.62,
-      priceUa: 6399,
-      economy: 200,
-      delivery: 10,
-      category: "clothes",
-    },
-    {
-      name: "Columbia Barlow Pass 550 Turbodown Jacket",
-      image: "assets/home/HowProfitable/swiper/products/ColumbiaBarlow.png",
-      priceUk: 8220,
-      priceUa: 6399,
-      economy: 200,
-      delivery: 10,
-      category: "clothes",
-    },
-    {
-      name: "Columbia Barlow Pass 550 Turbodown Jacket",
-      image: "assets/home/HowProfitable/swiper/products/ColumbiaBarlow.png",
-      priceUk: 80,
-      priceUa: 6399,
-      economy: 200,
-      delivery: 10,
-      category: "clothes",
-    },
-    {
-      name: "Columbia Barlow Pass 550 Turbodown Jacket",
-      image: "assets/home/HowProfitable/swiper/products/ColumbiaBarlow.png",
-      priceUk: 80,
-      priceUa: 6399,
-      economy: 200,
-      delivery: 10,
-      category: "clothes",
-    },
-  ];
+  currentSlide: number = 0;
 
+  products: any[] = Products;
+  categories: any[] = Categories;
+
+  // The products filtered by category
   filteredProducts = this.products.filter(
     (p: any) => p.category === this.currentCategoty
   );
-
-  currentSlide: number = 1;
 
   onResize(event: any): void {
     this.screenWidth = event.target.innerWidth;
     this.responciveSwiper();
   }
 
+  // Change the height of the swiper
   responciveSwiper(): void {
     if (this.screenWidth > 1020) {
       this.swiperHeight = 350;
@@ -70,5 +37,19 @@ export class ProfitableSwiperComponent {
 
   ngOnInit() {
     this.responciveSwiper();
+  }
+
+  // To slide the products images near the control arrows
+  slide(num: string){
+    if(num === '+'){
+      if(this.currentSlide + 1 < this.filteredProducts.length){
+        this.currentSlide++
+      }
+    }
+    if(num === '-'){
+      if(this.currentSlide - 1 >= 0){
+        this.currentSlide--
+      }
+    }
   }
 }

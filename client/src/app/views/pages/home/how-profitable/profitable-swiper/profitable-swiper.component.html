@@ -14,7 +14,7 @@
     class="carousel-cell"
   >
     <div
-      class="lg:grid flex flex-col-reverse lg:grid-cols-3 w-full h-full border container swiper-responcive"
+      class="lg:grid flex flex-col-reverse lg:grid-cols-3 w-full h-full container swiper-responcive"
     >
       <div class="grid-cell flex flex-col mt-20">
         <h3>{{product.name}}</h3>
@@ -69,11 +69,18 @@
 <div class="images-prew-next container">
   <img
     class="rounded-box"
+    (click)="slide('-')"
     src="{{(products[currentSlide-1]) ? products[currentSlide-1].image:''}}"
   />
 
+  <div class="flex flex-col pr-[70px]">
+    <span>Термін доставки приблизно {{products[currentSlide].delivery}} днів</span>
+    <strong>Ви економите до <b>${{products[currentSlide].economy}}</b></strong>
+  </div>
+
   <img
     class="rounded-box"
+    (click)="slide('+')"
     src="{{(products[currentSlide+1]) ? products[currentSlide+1].image:''}}"
   />
 </div>
