@@ -10,25 +10,11 @@
 // Fonts
 
 // Scss
+@import "./tw.custom.scss";
 @import "./popup.scss";
 @import "./blue-box.scss";
 // Scss
 
-@media (max-width: 640px) {
-  .container {
-    max-width: 440px;
-  }
-}
-@media (max-width: 440px) {
-  .container {
-    max-width: 320px;
-  }
-}
-@media (max-width: 320px) {
-  .container {
-    max-width: 240px;
-  }
-}
 
 // Navigation & buttons
 a {
@@ -175,3 +161,11 @@ a {
   }
 }
 // Boxes
+
+#app-profitable-swiper{
+  // display: flex;
+  // height: 1000px;
+  // align-items: center;
+  // justify-content: center;
+
+}

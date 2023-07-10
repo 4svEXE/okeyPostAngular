@@ -20,6 +20,8 @@
   }
 
   .gray-box {
+    position: sticky;
+    right: 0;
     margin-top: 44px;
     border-radius: 16px;
     background: #f2f6fc;
@@ -50,17 +52,28 @@
       line-height: 36px;
     }
   }
+}
 
-  .roubded-box {
+.rounded-box {
+  border-radius: 50%;
+  background: var(--6, #f2f6fc);
+
+  &.active {
     margin: 20px;
     width: 300px;
     height: 300px;
-    border-radius: 50%;
-    background: var(--6, #f2f6fc);
 
     img {
       height: 300px;
       transform: scale(1.2);
     }
   }
+}
+
+.images-prew-next {
+  display: flex;
+  justify-content: space-between;
+  // background-color: red;
+  height: 100px;
+  padding: 0 60px;
 }
