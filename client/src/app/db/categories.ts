@@ -1,8 +1,8 @@
 export const Categories = [
-  { title: "clothes" },
-  { title: "electronics" },
-  { title: "accessories" },
-  { title: "for children" },
-  { title: "for sports" },
-  { title: "cosmetic" },
+  { title: "clothes", translation: "одягу" },
+  { title: "electronics", translation: "електроніки" },
+  { title: "accessories", translation: "аксесуарів" },
+  { title: "for children", translation: "товарів для дітей" },
+  { title: "for sports", translation: "товарів для спорту" },
+  { title: "cosmetic", translation: "косметики" },
 ];

@@ -1,16 +1,20 @@
 <carousel
   [arrows]="true"
-
-  [cellsToShow]=cellsToShow
-  [height]="100"
+  [cellsToShow]="cellsToShow"
+  [height]="swiperHeight"
   (window:resize)="onResize($event)"
-  class="shadow-box mt-[150px]"
+  class="container swiper-responcive categoties-swiper shadow-box mt-10 lg:mt-[150px]"
 >
-  <div *ngFor="let category of categories" class="carousel-cell">
-    <div class="flex category-item">
-        <img src="{{imagesPath + category.title}}.svg" alt="{{category.title}}">
-        {{ category.title }}
+  <div *ngFor="let category of categories; let i = index" class="carousel-cell">
+    <div
+      class="flex category-item"
+      [class.active]="activeCategory === category.title"
+      (click)="setCategory(category.title)"
+    >
+      <img src="{{imagesPath + category.title}}.svg" alt="{{category.title}}" />
+      <span class="word-break">
+        {{ category.translation }}
+      </span>
     </div>
-    
   </div>
 </carousel>

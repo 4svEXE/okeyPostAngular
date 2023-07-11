@@ -17,6 +17,10 @@ import { HowProfitableComponent } from './views/pages/home/how-profitable/how-pr
 import { FooterComponent } from './views/shared/footer/footer.component';
 import { ProfitableSwiperComponent } from './views/pages/home/how-profitable/profitable-swiper/profitable-swiper.component';
 import { CategoriesSwiperComponent } from './views/pages/home/how-profitable/categories-swiper/categories-swiper.component';
+import { OurShoppersComponent } from './views/pages/home/our-shoppers/our-shoppers.component';
+import { SimpleStepsComponent } from './views/pages/home/simple-steps/simple-steps.component';
+import { VirtualTourComponent } from './views/pages/home/virtual-tour/virtual-tour.component';
+import { SatisfiedCustomersComponent } from './views/pages/home/satisfied-customers/satisfied-customers.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +36,11 @@ import { CategoriesSwiperComponent } from './views/pages/home/how-profitable/cat
     HowProfitableComponent,
     FooterComponent,
     ProfitableSwiperComponent,
-    CategoriesSwiperComponent
+    CategoriesSwiperComponent,
+    OurShoppersComponent,
+    SimpleStepsComponent,
+    VirtualTourComponent,
+    SatisfiedCustomersComponent
   ],
   imports: [
     BrowserModule,

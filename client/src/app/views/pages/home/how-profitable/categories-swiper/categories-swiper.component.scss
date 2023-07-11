@@ -5,6 +5,7 @@
     padding: 24px;
     display: flex;
     align-items: center;
+    justify-content: center;
 
   &.active {
     background: var(--6, #f2f6fc);
@@ -15,7 +16,8 @@
   }
 
   img{
+    width: 52px !important;
     height: 52px !important;
-    margin-left: 20px;
+    margin-right: 20px;
   }
 }

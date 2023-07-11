@@ -1,13 +1,9 @@
 <carousel
-  [loop]="true"
   [arrowsOutside]="false"
   [cellsToShow]="1"
   [height]="swiperHeight"
   (window:resize)="onResize($event)"
   class="container swiper-responcive"
-
-  [counter]="true"
-
 >
   <div
     *ngFor="let product of filteredProducts; let i = index"
@@ -44,7 +40,7 @@
       <div class="grid-cell flex flex-col mt-20">
         <h2>
           <strong>
-            Доставка одягу з Великобританії від
+            Доставка {{translatedCategory}} з Великобританії від
             <span>£7.79</span>
           </strong>
         </h2>
@@ -66,7 +62,7 @@
   </div>
 </carousel>
 
-<div class="images-prew-next container">
+<div class="images-prew-next container" [class.hidden]="hideImagesPrevNext">
   <img
     class="rounded-box"
     (click)="slide('-')"
@@ -74,7 +70,9 @@
   />
 
   <div class="flex flex-col pr-[70px]">
-    <span>Термін доставки приблизно {{products[currentSlide].delivery}} днів</span>
+    <span
+      >Термін доставки приблизно {{products[currentSlide].delivery}} днів</span
+    >
     <strong>Ви економите до <b>${{products[currentSlide].economy}}</b></strong>
   </div>
 

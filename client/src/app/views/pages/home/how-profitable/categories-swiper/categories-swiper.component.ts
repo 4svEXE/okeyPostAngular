@@ -1,5 +1,7 @@
 import { Component } from "@angular/core";
 import { Categories } from "../../../../../db/categories";
+import { CategoriesSwiperService } from "src/app/services/categories-swiper.service";
+
 
 @Component({
   selector: "app-categories-swiper",
@@ -14,26 +16,39 @@ export class CategoriesSwiperComponent {
   activeCategory: string = "clothes";
 
   // Carousel configs
-  cellsToShow: number = 5;
+  cellsToShow: number = 2;
+  swiperHeight: number = 120;
+
+  constructor(private categoriesSwiperService: CategoriesSwiperService) {}
 
   onResize(event: any): void {
     this.screenWidth = event.target.innerWidth;
     this.responciveCarousel();
   }
 
-  responciveCarousel() {
+  responciveCarousel(): number {
     if (this.screenWidth >= 1020) {
-      this.cellsToShow = 5;
+      this.swiperHeight = 120;
+      return this.cellsToShow = 5;
     } else if (this.screenWidth >= 940) {
-      this.cellsToShow = 4;
+      this.swiperHeight = 200;
+      return this.cellsToShow = 3;
     } else if (this.screenWidth >= 810) {
-      this.cellsToShow = 3;
+      this.swiperHeight = 200;
+      return this.cellsToShow = 2;
     } else if (this.screenWidth >= 640) {
-      this.cellsToShow = 2;
+      this.swiperHeight = 200;
+      return this.cellsToShow = 1;
     }
+    return 0;
   }
 
   ngOnInit(): void {
     this.responciveCarousel();
+  }
+
+  setCategory(category: string) {
+    this.activeCategory = category;
+    this.categoriesSwiperService.sendCurrentCategory(category);
   }
 }

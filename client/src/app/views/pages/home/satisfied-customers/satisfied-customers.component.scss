@@ -1,0 +1,26 @@
+.satisfied-customers-item {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+
+
+  img {
+    width: 52px;
+    height: 52px;
+  }
+  h3 {
+    color: var(--1, #1f2428);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    padding: 10px 0;
+  }
+  p {
+    color: var(--1, #1f2428);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 26px;
+  }
+}

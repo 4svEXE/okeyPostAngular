@@ -13,6 +13,30 @@
     margin-top: 200px !important;
     margin: 0 80px;
   }
+
+  &.categoties-swiper {
+    .carousel-arrow {
+      margin: 0px !important;
+      margin-top: 50px !important;
+    }
+  }
+}
+@media (min-width: (1020px)) {
+  .container .swiper-responcive {
+    &.categoties-swiper {
+      .carousel-arrow {
+        margin: 0px !important;
+        top: 50%;
+
+        &.carousel-arrow-prev {
+          transform: rotate(180deg) translateY(50%) !important;
+        }
+        &.carousel-arrow-next {
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
 }
 
 .carousel-arrow {
