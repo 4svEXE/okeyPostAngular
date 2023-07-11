@@ -21,6 +21,7 @@ import { OurShoppersComponent } from './views/pages/home/our-shoppers/our-shoppe
 import { SimpleStepsComponent } from './views/pages/home/simple-steps/simple-steps.component';
 import { VirtualTourComponent } from './views/pages/home/virtual-tour/virtual-tour.component';
 import { SatisfiedCustomersComponent } from './views/pages/home/satisfied-customers/satisfied-customers.component';
+import { BloggersReviewsComponent } from './views/pages/home/bloggers-reviews/bloggers-reviews.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { SatisfiedCustomersComponent } from './views/pages/home/satisfied-custom
     OurShoppersComponent,
     SimpleStepsComponent,
     VirtualTourComponent,
-    SatisfiedCustomersComponent
+    SatisfiedCustomersComponent,
+    BloggersReviewsComponent
   ],
   imports: [
     BrowserModule,
