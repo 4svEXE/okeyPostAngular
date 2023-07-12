@@ -11,7 +11,7 @@ import { CategoriesSwiperService } from "src/app/services/categories-swiper.serv
 export class CategoriesSwiperComponent {
   screenWidth = window.innerWidth;
 
-  imagesPath: string = "assets/home/HowProfitable/swiper/categories/";
+  imagesPath: string = "assets/img/home/HowProfitable/swiper/categories/";
   categories: any[] = Categories;
   activeCategory: string = "clothes";
 

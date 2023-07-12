@@ -1,7 +1,7 @@
 export const Products = [
   {
     name: "222 Columbia Barlow Pass 550 Turbodown Jacket",
-    image: "assets/home/HowProfitable/swiper/products/ColumbiaBarlow.png",
+    image: "ColumbiaBarlow.png",
     priceUk: 80.62,
     priceUa: 6399,
     economy: 200,
@@ -10,7 +10,7 @@ export const Products = [
   },
   {
     name: "Columbia Barlow Pass 550 Turbodown Jacket",
-    image: "assets/home/HowProfitable/swiper/products/shirt.png",
+    image: "shirt.png",
     priceUk: 8220,
     priceUa: 6399,
     economy: 200,
@@ -19,7 +19,7 @@ export const Products = [
   },
   {
     name: "Columbia Barlow Pass 550 Turbodown Jacket",
-    image: "assets/home/HowProfitable/swiper/products/shorts.png",
+    image: "shorts.png",
     priceUk: 80,
     priceUa: 6399,
     economy: 200,
@@ -28,7 +28,7 @@ export const Products = [
   },
   {
     name: "boxing",
-    image: "assets/home/HowProfitable/swiper/products/ColumbiaBarlow.png",
+    image: "ColumbiaBarlow.png",
     priceUk: 80,
     priceUa: 6399,
     economy: 190,
@@ -37,7 +37,7 @@ export const Products = [
   },
   {
     name: "boxing accessories",
-    image: "assets/home/HowProfitable/swiper/products/ColumbiaBarlow.png",
+    image: "ColumbiaBarlow.png",
     priceUk: 80,
     priceUa: 6399,
     economy: 190,
@@ -46,7 +46,7 @@ export const Products = [
   },
   {
     name: "boxing for children",
-    image: "assets/home/HowProfitable/swiper/products/ColumbiaBarlow.png",
+    image: "ColumbiaBarlow.png",
     priceUk: 80,
     priceUa: 6399,
     economy: 190,

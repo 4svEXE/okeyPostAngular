@@ -23,6 +23,7 @@ import { VirtualTourComponent } from './views/pages/home/virtual-tour/virtual-to
 import { SatisfiedCustomersComponent } from './views/pages/home/satisfied-customers/satisfied-customers.component';
 import { BloggersReviewsComponent } from './views/pages/home/bloggers-reviews/bloggers-reviews.component';
 import { YourPersonalAdressComponent } from './views/pages/home/your-personal-adress/your-personal-adress.component';
+import { SunscribeToUsComponent } from './views/pages/home/sunscribe-to-us/sunscribe-to-us.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { YourPersonalAdressComponent } from './views/pages/home/your-personal-ad
     VirtualTourComponent,
     SatisfiedCustomersComponent,
     BloggersReviewsComponent,
-    YourPersonalAdressComponent
+    YourPersonalAdressComponent,
+    SunscribeToUsComponent
   ],
   imports: [
     BrowserModule,

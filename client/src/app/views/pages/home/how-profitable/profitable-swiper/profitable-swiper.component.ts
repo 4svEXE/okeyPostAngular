@@ -19,6 +19,7 @@ export class ProfitableSwiperComponent {
 
   products: any[] = Products;
   categories: any[] = Categories;
+  imgPath: string = 'assets/img/home/HowProfitable/swiper/products/'
 
   // The products filtered by category
   filteredProducts = this.products.filter(
