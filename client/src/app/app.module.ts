@@ -22,6 +22,7 @@ import { SimpleStepsComponent } from './views/pages/home/simple-steps/simple-ste
 import { VirtualTourComponent } from './views/pages/home/virtual-tour/virtual-tour.component';
 import { SatisfiedCustomersComponent } from './views/pages/home/satisfied-customers/satisfied-customers.component';
 import { BloggersReviewsComponent } from './views/pages/home/bloggers-reviews/bloggers-reviews.component';
+import { YourPersonalAdressComponent } from './views/pages/home/your-personal-adress/your-personal-adress.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { BloggersReviewsComponent } from './views/pages/home/bloggers-reviews/bl
     SimpleStepsComponent,
     VirtualTourComponent,
     SatisfiedCustomersComponent,
-    BloggersReviewsComponent
+    BloggersReviewsComponent,
+    YourPersonalAdressComponent
   ],
   imports: [
     BrowserModule,
