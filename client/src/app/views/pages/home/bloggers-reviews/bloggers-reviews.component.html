@@ -2,102 +2,42 @@
   <h2 class="mb-[50px]">Відгуки та цитати блогерів:</h2>
 
   <div class="grid w-full grid-cols-1 lg:grid-cols-2 gap-4">
-    <div class="reviews-item shadow-box flex flex-row xs:flex-col">
-      <img src="assets/img/home/reviews/1.jpg" alt="" />
+    <div
+      *ngFor="let review of reviews"
+      class="reviews-item shadow-box flex lg:flex-row flex-col items-center"
+    >
+      <img src="{{imgPath + review.image}}" alt="" />
 
       <div class="flex flex-col text-container justify-between">
         <div class="flex flex-col">
-          <h4>IVAN S</h4>
-          <div class="flex rating"><b>★★★★★</b></div>
+          <h4>{{review.userName}}</h4>
+
+          <div class="flex rating">
+            <div *ngFor="let i of [1, 2, 3, 4, 5]" class="flex">
+              <ng-container
+                *ngIf="i <= review.rating; then activeStar; else unactiveStar"
+              >
+              </ng-container>
+
+              <ng-template #activeStar><b>★</b></ng-template>
+
+              <ng-template #unactiveStar><s>★</s></ng-template>
+            </div>
+          </div>
+
           <p>
-            Ваша доставка найшвидша і найдешевша!!!
+            {{review.review}}
           </p>
         </div>
 
         <div class="flex flex-col">
           <p>
             <b>Дата:</b>
-            <span>16 жовтня 2022</span>
+            <span>{{review.date}}</span>
           </p>
           <p>
             <b>Місто:</b>
-            <span>Волинь</span>
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="reviews-item shadow-box flex flex-row xs:flex-col">
-      <img src="assets/home/reviews/2.jpg" alt="" />
-
-      <div class="flex flex-col text-container justify-between">
-        <div class="flex flex-col">
-          <h4>Михайло З</h4>
-          <div class="flex rating"><b>★★★★</b>★</div>
-          <p>
-            Пуховик Levi's з eBay. Все приїхало швидко та цілим.
-          </p>
-        </div>
-
-        <div class="flex flex-col">
-          <p>
-            <b>Дата:</b>
-            <span>19 жовтня 2022</span>
-          </p>
-          <p>
-            <b>Місто:</b>
-            <span>Вінниця</span>
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="reviews-item shadow-box flex flex-row xs:flex-col">
-      <img src="assets/img/home/reviews/3.jpg" alt="" />
-
-      <div class="flex flex-col text-container justify-between">
-        <div class="flex flex-col">
-          <h4>Євген Н</h4>
-          <div class="flex rating"><b>★★★</b>★★</div>
-          <p>
-            Вогонь, як завжди! Окреме спасибі за додаткову упаковку, годинники
-            від Apple прийшли в простому паперовому пакеті.
-          </p>
-        </div>
-
-        <div class="flex flex-col">
-          <p>
-            <b>Дата:</b>
-            <span>19 жовтня 2022</span>
-          </p>
-          <p>
-            <b>Місто:</b>
-            <span>Ужгород</span>
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="reviews-item shadow-box flex flex-row xs:flex-col">
-      <img src="assets/img/home/reviews/4.jpg" alt="" />
-
-      <div class="flex flex-col text-container justify-between">
-        <div class="flex flex-col">
-          <h4>Ольга В</h4>
-          <div class="flex rating"><b>★★★★</b>★</div>
-          <p>
-            Дуже швидко, надійно! Як завжди дякую за роботу!
-          </p>
-        </div>
-
-        <div class="flex flex-col">
-          <p>
-            <b>Дата:</b>
-            <span>20 жовтня 2022</span>
-          </p>
-          <p>
-            <b>Місто:</b>
-            <span>Рівне</span>
+            <span>{{review.sity}}</span>
           </p>
         </div>
       </div>
