@@ -1,0 +1,51 @@
+@for $i from 1 through 100 {
+  @media (min-width: (#{$i * 20px + 40px}) ) {
+    .container .swiper-responcive {
+      max-width: #{$i * 20px} !important;
+    }
+  }
+}
+
+.container .swiper-responcive {
+  margin-bottom: 0px;
+
+  .carousel-arrow {
+    margin-top: 200px !important;
+    margin: 0 80px;
+  }
+
+  &.categoties-swiper {
+    .carousel-arrow {
+      margin: 0px !important;
+      margin-top: 50px !important;
+    }
+  }
+}
+@media (min-width: (1020px)) {
+  .container .swiper-responcive {
+    &.categoties-swiper {
+      .carousel-arrow {
+        margin: 0px !important;
+        top: 50%;
+
+        &.carousel-arrow-prev {
+          transform: rotate(180deg) translateY(50%) !important;
+        }
+        &.carousel-arrow-next {
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+}
+
+.carousel-arrow {
+  &.carousel-arrow-prev {
+    transform: rotate(180deg) !important;
+    background-image: url("../img/home/HowProfitable/swiper/arrow.svg") !important;
+  }
+
+  &.carousel-arrow-next {
+    background-image: url("../img/home/HowProfitable/swiper/arrow.svg") !important;
+  }
+}
