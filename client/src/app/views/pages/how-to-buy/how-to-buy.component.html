@@ -16,7 +16,7 @@
 
   <div
     *ngFor="let step of buySteps"
-    class="how-to-buy-item w-full flex mb-[110px]"
+    class="how-to-buy-item w-full flex mb-[110px] md:flex-row flex-col"
   >
     <img src="{{imgPath + step.image}}" alt="{{step.title}}" />
 
@@ -35,9 +35,14 @@
     </div>
   </div>
 
-  <button (click)="openPopup('register')" class="green-button mt-9">
-    Отримати адресу в UK
-  </button>
+  <div class="w-full">
+    <button
+      (click)="openPopup('register')"
+      class="green-button mt-9"
+    >
+      Отримати адресу в UK
+    </button>
+  </div>
 </div>
 
 <app-social-box />
