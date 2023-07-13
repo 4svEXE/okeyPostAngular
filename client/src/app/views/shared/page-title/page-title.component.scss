@@ -1,0 +1,15 @@
+.page-title {
+  display: flex;
+  align-items: start !important;
+  justify-content: start !important;
+  padding: 45px 5% !important;
+
+  .bread-crumps {
+    a {
+      padding: 0;
+      &::after {
+        background-color: #fff !important;
+      }
+    }
+  }
+}

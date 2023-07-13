@@ -1,0 +1,22 @@
+<div class="page-title blue-box swiper-responcive flex-col mt-4">
+  <div class="side flex flex-col">
+    <div class="bread-crumps pl-10 md:pl-0">
+      <a href="#" routerLink="/">Головна</a> / <span>{{currentPage}}</span>
+    </div>
+  </div>
+
+  <div class="side flex flex-col">
+    <h1>
+      <wbr />
+      {{title}}
+      <wbr />
+    </h1>
+    <p>
+      {{describition}}
+    </p>
+
+    <a (click)="openPopup(popupTarget)" class="green-button mt-9">
+      {{popupButtonTitle}}
+    </a>
+  </div>
+</div>

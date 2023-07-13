@@ -1,3 +1,8 @@
+export interface LinkInterface {
+  title: string; // "Блог"
+  path: string; // "/blog"
+}
+
 export interface ReviewInterface {
   userName: string;
   rating: number;
@@ -7,7 +12,9 @@ export interface ReviewInterface {
   image: string;
 }
 
-export interface LinkInterface {
-  title: string;
-  path: string;
+export interface BuyStepsInterface {
+  count: string, // "01"
+  title: string, // 
+  text: string, // 
+  image: string, // "1.svg"
 }

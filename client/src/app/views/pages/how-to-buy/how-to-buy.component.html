@@ -1,1 +1,43 @@
-<p>how-to-buy works!</p>
+<app-page-title
+  [currentPage]="'Як отримати'"
+  [title]="'Навчимо як купувати у Великобританії'"
+  [describition]="'Та економити до 70%'"
+  [popupTarget]="'register'"
+  [popupButtonTitle]="'Отримати адресу в UK'"
+/>
+
+<div class="container content-block">
+  <h2>Купувати у Великій Британії дуже просто</h2>
+  <p class="py-5 mb-10 md:mb-20">
+    Англійські магазини не доставляють до України, але це проблема. З OkeyPost
+    можна купувати за найкращими цінами та економити на доставці. Ми отримаємо
+    ваші посилки, надійно запакуємо і відправимо їх до вас додому.
+  </p>
+
+  <div
+    *ngFor="let step of buySteps"
+    class="how-to-buy-item w-full flex mb-[110px]"
+  >
+    <img src="{{imgPath + step.image}}" alt="{{step.title}}" />
+
+    <div class="flex flex-col ml-5">
+      <div class="flex pb-4">
+        <strong>
+          {{step.count}}
+        </strong>
+        <h5>
+          {{step.title}}
+        </h5>
+      </div>
+      <p>
+        {{step.text}}
+      </p>
+    </div>
+  </div>
+
+  <button (click)="openPopup('register')" class="green-button mt-9">
+    Отримати адресу в UK
+  </button>
+</div>
+
+<app-social-box />

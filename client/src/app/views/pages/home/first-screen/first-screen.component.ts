@@ -14,13 +14,7 @@ export class FirstScreenComponent {
     private popupService: PopupService
   ) {}
 
-  openLoginPopup() {
-    this.popupService.sendData({
-      isActivePopup: true,
-      currentPopup: "register",
-    });
-
-    // Opet the header 
-    this.headerService.sendState(true);
+  openPopup(popupType: string) {
+    this.popupService.openPopup(popupType);
   }
 }

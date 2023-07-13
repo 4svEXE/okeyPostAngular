@@ -31,6 +31,8 @@ import { BonucesComponent } from './views/pages/bonuces/bonuces.component';
 import { BlogComponent } from './views/pages/blog/blog.component';
 import { ShopsComponent } from './views/pages/shops/shops.component';
 import { HowToBuyComponent } from './views/pages/how-to-buy/how-to-buy.component';
+import { PageTitleComponent } from './views/shared/page-title/page-title.component';
+import { SocialBoxComponent } from './views/shared/social-box/social-box.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +62,9 @@ import { HowToBuyComponent } from './views/pages/how-to-buy/how-to-buy.component
     BonucesComponent,
     BlogComponent,
     ShopsComponent,
-    HowToBuyComponent
+    HowToBuyComponent,
+    PageTitleComponent,
+    SocialBoxComponent
   ],
   imports: [
     BrowserModule,
