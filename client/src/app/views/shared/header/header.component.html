@@ -19,32 +19,8 @@
   </div>
 
   <nav>
-    <a href="#" routerLink="/" [routerLinkActive]="['active']">
-      Як купувати
-    </a>
-
-    <a href="#" routerLink="/sales" [routerLinkActive]="['active']">
-      Розпродажі
-    </a>
-
-    <a href="#" routerLink="/prices" [routerLinkActive]="['active']">
-      Ціни
-    </a>
-
-    <a href="#" routerLink="/help" [routerLinkActive]="['active']">
-      Допомога
-    </a>
-
-    <a href="#" routerLink="/bonuces" [routerLinkActive]="['active']">
-      Бонуси
-    </a>
-
-    <a href="#" routerLink="/blog" [routerLinkActive]="['active']">
-      Блог
-    </a>
-
-    <a href="#" routerLink="/shops" [routerLinkActive]="['active']">
-      Магазини
+    <a *ngFor="let link of links" href="#" routerLink="{{link.path}}" [routerLinkActive]="['active']">
+      {{link.title}}
     </a>
   </nav>
 
@@ -63,5 +39,3 @@
     <app-popup />
   </div>
 </header>
-
-

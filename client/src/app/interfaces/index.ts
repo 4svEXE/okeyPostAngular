@@ -6,3 +6,8 @@ export interface ReviewInterface {
   sity: string;
   image: string;
 }
+
+export interface LinkInterface {
+  title: string;
+  path: string;
+}
