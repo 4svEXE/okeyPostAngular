@@ -13,6 +13,9 @@ MIT
 angular-responsive-carousel
 Apache License 2.0
 
+ngx-pagination
+MIT
+
 rxjs
 Apache-2.0
                                Apache License
