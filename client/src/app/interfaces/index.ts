@@ -18,3 +18,9 @@ export interface BuyStepsInterface {
   text: string, // 
   image: string, // "1.svg"
 }
+
+export interface SalesPostInterface {
+  title: string;
+  body: string;
+  image: string;
+}

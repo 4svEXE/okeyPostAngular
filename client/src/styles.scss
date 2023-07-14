@@ -10,12 +10,12 @@
 // Fonts
 
 // Scss
+@import "./assets/scss/pagination-custom.scss";
 @import "./assets/scss/swiper.custom.scss";
 @import "./assets/scss/popup.scss";
 @import "./assets/scss/blue-box.scss";
 @import "./assets/scss/green-button.scss";
 // Scss
-
 
 // Navigation & buttons
 a {
@@ -41,7 +41,6 @@ a {
   }
 }
 
-
 // Navigation & buttons
 
 // Boxes
@@ -62,8 +61,8 @@ a {
 @media (max-width: 1024px) {
   .content-block {
     margin-top: 80px;
-    
-    h2{
+
+    h2 {
       min-width: 100%;
     }
   }
@@ -138,4 +137,19 @@ a {
   word-break: break-word;
   word-wrap: break-word;
   overflow-wrap: break-word;
+}
+
+#sales-posts-container {
+  a {
+    color: var(--7, #01cd7d);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    padding: 0;
+
+    &:after {
+      background-color: #01cd7d;
+    }
+  }
 }

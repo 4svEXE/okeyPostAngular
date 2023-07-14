@@ -6,9 +6,11 @@ p {
   line-height: 36px; /* 180% */
 }
 
-button{
+@media (max-width: 768px) {
+  button {
     max-width: inherit !important;
     width: 100% !important;
+  } 
 }
 
 .how-to-buy-item {

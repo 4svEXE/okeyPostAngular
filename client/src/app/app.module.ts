@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import {IvyCarouselModule} from 'angular-responsive-carousel';
+import {NgxPaginationModule} from 'ngx-pagination';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -69,7 +70,8 @@ import { SocialBoxComponent } from './views/shared/social-box/social-box.compone
   imports: [
     BrowserModule,
     AppRoutingModule,
-    IvyCarouselModule
+    IvyCarouselModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]

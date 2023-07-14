@@ -1,1 +1,37 @@
-<p>sales works!</p>
+<app-page-title
+  [currentPage]="'Розпродажі'"
+  [title]="'Розпродажі'"
+  [describition]="'ранній доступ до розпродажів у магазинах'"
+  [popupTarget]="'register'"
+  [popupButtonTitle]="'Отримати адресу в UK'"
+/>
+
+<div class="container content-block">
+  <h2>
+    Black Friday Early Access ранній доступ до розпродажів у магазинах
+    Великобританії!
+  </h2>
+
+  <div
+    id="sales-posts-container"
+    class="grid grid-cols-1 lg:grid-cols-2 mt-10 lg:mt-20"
+  >
+    <div
+      *ngFor="let post of salesPosts | paginate: { itemsPerPage: 1, currentPage: page }"
+      class="sales-item flex-col xxxl:flex-row items-center lg:items-start mt-4"
+    >
+      <img src="{{imgPath + post.image}}" alt="" class="mr-0 lg:mr-[56px]" />
+
+      <div class="flex flex-col p-3 items-start">
+        <h5>{{post.title}}</h5>
+        <div [innerHTML]="post.body" class="flex flex-col"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex justify-center my-4">
+    <pagination-controls (pageChange)="page = $event"></pagination-controls>
+  </div>
+</div>
+
+<app-social-box />
