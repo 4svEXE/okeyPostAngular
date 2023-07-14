@@ -3,6 +3,8 @@ import { HeaderService } from "src/app/services/header.service";
 import { PopupService } from "src/app/services/popup.service";
 import { LinkInterface } from "../../../interfaces";
 
+import { Router, NavigationEnd } from "@angular/router";
+
 @Component({
   selector: "app-header",
   templateUrl: "./header.component.html",
@@ -25,7 +27,8 @@ export class HeaderComponent {
 
   constructor(
     private headerService: HeaderService,
-    private popupService: PopupService
+    private popupService: PopupService,
+    private router: Router
   ) {
     this.popupService.data$.subscribe((data: any) => {
       this.isActivePopup = data.isActivePopup;
@@ -41,6 +44,15 @@ export class HeaderComponent {
     this.popupService.sendData({
       isActivePopup: !this.isActivePopup,
       currentPopup: this.currentPopup,
+    });
+  }
+
+  ngOnInit() {
+    // Skroll to top the page when navigation
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        window.scrollTo(0, 0);
+      }
     });
   }
 }

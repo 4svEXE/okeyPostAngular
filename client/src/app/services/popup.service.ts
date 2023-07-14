@@ -1,14 +1,14 @@
 import { Injectable } from "@angular/core";
 import { Subject } from "rxjs";
-import { HeaderService } from "./header.service";
+// import { HeaderService } from "./header.service";
 
 @Injectable({
   providedIn: "root",
 })
 export class PopupService {
-  constructor(
-    private headerService: HeaderService,
-  ) {}
+  // constructor(
+  //   private headerService: HeaderService,
+  // ) {}
 
   private dataSubject = new Subject<object>();
   data$ = this.dataSubject.asObservable();
@@ -24,7 +24,7 @@ export class PopupService {
     });
 
     // Open the header
-    this.headerService.sendState(true);
+    // this.headerService.sendState(true);
   }
 }
 

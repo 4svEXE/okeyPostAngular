@@ -19,7 +19,13 @@
   </div>
 
   <nav>
-    <a *ngFor="let link of links" href="#" routerLink="{{link.path}}" [routerLinkActive]="['active']">
+    <a
+      *ngFor="let link of links"
+      href="#"
+      routerLink="{{link.path}}"
+      [routerLinkActive]="['active']"
+      (click)="isActiveHeader = !isActiveHeader"
+    >
       {{link.title}}
     </a>
   </nav>
@@ -34,8 +40,8 @@
       Зв’язатись з нами
     </button>
   </div>
-
-  <div class="popup-container">
-    <app-popup />
-  </div>
 </header>
+
+<div class="popup-container">
+  <app-popup />
+</div>

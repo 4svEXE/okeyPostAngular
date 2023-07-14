@@ -17,7 +17,7 @@
     class="grid grid-cols-1 lg:grid-cols-2 mt-10 lg:mt-20"
   >
     <div
-      *ngFor="let post of salesPosts | paginate: { itemsPerPage: 1, currentPage: page }"
+      *ngFor="let post of salesPosts | paginate: { itemsPerPage: 10, currentPage: page }"
       class="sales-item flex-col xxxl:flex-row items-center lg:items-start mt-4"
     >
       <img src="{{imgPath + post.image}}" alt="" class="mr-0 lg:mr-[56px]" />
