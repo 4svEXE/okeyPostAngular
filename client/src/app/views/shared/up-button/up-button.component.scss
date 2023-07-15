@@ -1,0 +1,22 @@
+.up-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px !important;
+  height: 40px !important;
+
+  padding: 0 !important;
+  min-width: inherit !important;
+  max-width: inherit !important;
+  transition: 0.3s ease-in-out;
+
+  opacity: 0;
+  transform: scale(1.5);
+  pointer-events: none;
+
+  &.visible {
+    opacity: 1;
+    pointer-events: all;
+    transform: scale(1);
+  }
+}

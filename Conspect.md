@@ -32,3 +32,8 @@
 <router-outlet></router-outlet>
 routerLink="/register" 
 [routerLinkActive]="['active']"
+
+// Deploy
+ng build --configuration production --base-href "https://4svEXE.github.io/okeyPostAngular/"
+
+angular-cli-ghpages --dir=dist/okey-post

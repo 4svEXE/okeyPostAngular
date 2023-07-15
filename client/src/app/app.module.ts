@@ -34,6 +34,7 @@ import { ShopsComponent } from './views/pages/shops/shops.component';
 import { HowToBuyComponent } from './views/pages/how-to-buy/how-to-buy.component';
 import { PageTitleComponent } from './views/shared/page-title/page-title.component';
 import { SocialBoxComponent } from './views/shared/social-box/social-box.component';
+import { UpButtonComponent } from './views/shared/up-button/up-button.component';
 
 @NgModule({
   declarations: [
@@ -65,7 +66,8 @@ import { SocialBoxComponent } from './views/shared/social-box/social-box.compone
     ShopsComponent,
     HowToBuyComponent,
     PageTitleComponent,
-    SocialBoxComponent
+    SocialBoxComponent,
+    UpButtonComponent
   ],
   imports: [
     BrowserModule,
