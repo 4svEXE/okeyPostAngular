@@ -2,7 +2,6 @@ import { Component } from "@angular/core";
 import { Categories } from "../../../../../db/categories";
 import { CategoriesSwiperService } from "src/app/services/categories-swiper.service";
 
-
 @Component({
   selector: "app-categories-swiper",
   templateUrl: "./categories-swiper.component.html",
@@ -11,7 +10,7 @@ import { CategoriesSwiperService } from "src/app/services/categories-swiper.serv
 export class CategoriesSwiperComponent {
   screenWidth = window.innerWidth;
 
-  imagesPath: string = "assets/img/home/HowProfitable/swiper/categories/";
+  imgPath: string = "assets/img/home/HowProfitable/swiper/categories/";
   categories: any[] = Categories;
   activeCategory: string = "clothes";
 
