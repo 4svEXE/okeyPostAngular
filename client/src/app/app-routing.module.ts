@@ -16,7 +16,7 @@ const routes: Routes = [
   { path: "sales", component: SalesComponent },
   { path: "prices", component: PricesComponent },
   { path: "help", component: HelpComponent },
-  { path: "bonuces", component: BonucesComponent },
+  { path: "bonuces", component: BonucesComponent }, // bonuses
   { path: "blog", component: BlogComponent },
   { path: "shops", component: ShopsComponent },
 ];

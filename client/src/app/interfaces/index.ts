@@ -24,3 +24,9 @@ export interface SalesPostInterface {
   body: string;
   image: string;
 }
+
+export interface BonuseInterface{
+  title: string,
+  text: string,
+  image: string,
+}

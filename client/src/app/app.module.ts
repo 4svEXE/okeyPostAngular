@@ -35,6 +35,7 @@ import { HowToBuyComponent } from './views/pages/how-to-buy/how-to-buy.component
 import { PageTitleComponent } from './views/shared/page-title/page-title.component';
 import { SocialBoxComponent } from './views/shared/social-box/social-box.component';
 import { UpButtonComponent } from './views/shared/up-button/up-button.component';
+import { MakeMoneyComponent } from './views/pages/bonuces/make-money/make-money.component';
 
 @NgModule({
   declarations: [
@@ -67,7 +68,8 @@ import { UpButtonComponent } from './views/shared/up-button/up-button.component'
     HowToBuyComponent,
     PageTitleComponent,
     SocialBoxComponent,
-    UpButtonComponent
+    UpButtonComponent,
+    MakeMoneyComponent
   ],
   imports: [
     BrowserModule,

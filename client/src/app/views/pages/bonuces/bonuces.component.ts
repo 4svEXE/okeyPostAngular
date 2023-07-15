@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { BonuseInterface } from 'src/app/interfaces';
+import { Bonuses } from 'src/app/db/bonuses';
 
 @Component({
   selector: 'app-bonuces',
@@ -6,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./bonuces.component.scss']
 })
 export class BonucesComponent {
-
+  imgPath: string = "assets/img/bonuses/";
+  bonuses: BonuseInterface[] = Bonuses;
 }
+

@@ -1,1 +1,26 @@
-<p>bonuces works!</p>
+<app-page-title
+  [currentPage]="'Бонуси та партнерська програма'"
+  [title]="'Бонуси та партнерська програма'"
+  [describition]="'Ми платимо $3 за кожну відправлену посилку'"
+  [popupTarget]="'register'"
+  [popupButtonTitle]="'Почати заробляти'"
+/>
+
+<div class="container content-block">
+  <h2>
+    Заробляти з нами — простіше простого:
+  </h2>
+
+  <div class="grid grid-cols-1 lg:grid-cols-2 mt-10 lg:mt-20 gap-[30px]">
+    <div
+      *ngFor="let bonus of bonuses"
+      class="bonuses-item shadow-box flex flex-col p-9"
+    >
+      <img src="{{imgPath + bonus.image}}" alt="" />
+      <h5>{{bonus.title}}</h5>
+      <p>{{bonus.text}}</p>
+    </div>
+  </div>
+</div>
+
+<app-make-money [imgPath]="imgPath"/>
