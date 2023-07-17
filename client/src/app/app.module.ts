@@ -36,6 +36,8 @@ import { PageTitleComponent } from './views/shared/page-title/page-title.compone
 import { SocialBoxComponent } from './views/shared/social-box/social-box.component';
 import { UpButtonComponent } from './views/shared/up-button/up-button.component';
 import { MakeMoneyComponent } from './views/pages/bonuses/make-money/make-money.component';
+import { SearchFormComponent } from './views/pages/help/search-form/search-form.component';
+import { AnswersComponent } from './views/pages/help/answers/answers.component';
 
 @NgModule({
   declarations: [
@@ -69,7 +71,9 @@ import { MakeMoneyComponent } from './views/pages/bonuses/make-money/make-money.
     PageTitleComponent,
     SocialBoxComponent,
     UpButtonComponent,
-    MakeMoneyComponent
+    MakeMoneyComponent,
+    SearchFormComponent,
+    AnswersComponent
   ],
   imports: [
     BrowserModule,

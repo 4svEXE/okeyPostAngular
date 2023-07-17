@@ -1,0 +1,121 @@
+/* Variables */
+
+$accordion: 700px; // Accordion width
+$panelheight: 200px; // Applied to "max-height" - Must be larger than the panel content
+$items: 5; // Specify the number of panels present in HTML
+
+$panel_bg: darken(white, 5%); // bg color of the accordion panel
+$label_bg: lighten(#999, 10%); // bg color of the accordion labels
+
+// Don't edit below
+$label_bg_active: darken($label_bg, 7.5%);
+$num_bg: darken($label_bg_active, 15%);
+$border_col: darken($label_bg, 40%);
+$label_color: black;
+// Don't edit above
+
+$gutter: 15px; // General padding around items
+$ts: all 0.2s ease; // General transition effect
+
+/* Styles */
+
+%reset {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 24px;
+  color: black;
+  padding: 15px 15px 0;
+  margin: 0;
+}
+
+.block {
+  //   max-width: $accordion;
+  width: 100%;
+  height: 100%;
+  float: left;
+  padding: $gutter;
+  z-index: 10;
+  background-color: white;
+  overflow: hidden;
+
+  @media screen and (max-width: 599px) {
+    max-width: 100%;
+  }
+
+  .answer-item {
+    padding: 37px;
+  }
+
+  > div {
+    display: block;
+    position: relative;
+    @extend %reset;
+
+    &:not(:last-of-type) {
+      margin: 0 0 10px;
+    }
+
+    span {
+      color: var(--2, #222);
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 16px; /* 88.889% */
+    }
+
+    input {
+      & + label {
+        cursor: pointer;
+        display: flex;
+        padding: $gutter $gutter;
+        transition: all 0.25s ease-in-out 0.5s, color 0.25s ease-in-out 0.5s;
+      }
+      & ~ div {
+        visibility: hidden;
+        max-height: 0;
+        opacity: 0;
+        transition: all 0.5s ease-in-out 0.2s, opacity 0.25s ease-in-out 0.25s,
+          padding 0s ease-in-out 0s;
+
+        p {
+          padding: $gutter;
+          color: var(--2, #222);
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 16px; /* 88.889% */
+          padding: 20px 0;
+        }
+      }
+
+      &:checked {
+        & + label {
+          transition: background-color 0s ease-in-out 0s;
+
+          @if lightness($label_bg_active) < 50% {
+            color: invert($label_color);
+          } @else {
+            color: $label_color;
+          }
+
+          img{
+            transition: .3s;
+            transform: rotate(-90deg);
+          }
+        }
+        & ~ div {
+          display: block;
+          opacity: 1;
+          visibility: visible;
+          max-height: $panelheight;
+          transition: all 0.5s ease-in-out 0.2s, opacity 0.25s ease-in-out 0.5s,
+            padding 0s ease-in-out 0s;
+        }
+      }
+    }
+  }
+}

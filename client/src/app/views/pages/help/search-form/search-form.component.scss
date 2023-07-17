@@ -1,0 +1,27 @@
+.search-form {
+  padding: 40px;
+
+  .search-form-inputs {
+    border-bottom: 1px solid #222;
+  }
+
+  h5 {
+    color: var(--2, #222);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px; /* 128.571% */
+    padding-bottom: 27px;
+  }
+
+  input,
+  input:active,
+  input:focus {
+    outline: inherit !important;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    padding: 25px 0;
+  }
+}

@@ -1,1 +1,17 @@
-<p>help works!</p>
+<app-page-title
+  [currentPage]="'Часті питання'"
+  [title]="'Відповідаємо на питання доставки'"
+  [describition]="''"
+  [popupTarget]="''"
+  [popupButtonTitle]="''"
+/>
+
+<div class="container content-block">
+  <!-- Search form -->
+  <app-search-form />
+
+  <!-- FAQ -->
+  <app-answers />
+</div>
+
+<app-social-box />

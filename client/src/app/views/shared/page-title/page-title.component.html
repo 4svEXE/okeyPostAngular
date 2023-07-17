@@ -15,7 +15,11 @@
       {{describition}}
     </p>
 
-    <a (click)="openPopup(popupTarget)" class="green-button mt-9">
+    <a
+      (click)="openPopup(popupTarget)"
+      class="green-button mt-9"
+      [class.hidden]="popupTarget === ''"
+    >
       {{popupButtonTitle}}
     </a>
   </div>

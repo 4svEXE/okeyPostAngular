@@ -1,0 +1,17 @@
+<div class="shadow-box search-form">
+  <h5>Пошук у питаннях та відповідях:</h5>
+
+  <div class="flex search-form-inputs">
+    <input
+      placeholder="Введіть своє питання..."
+      type="text"
+      #searchPhraseInput
+      value="{{searchPhrase}}"
+      (change)="setSearchPhrase(searchPhraseInput.value)"
+    />
+    <!-- <input type="button" value="find" /> -->
+    <button (click)="findBySearchPhrase()">
+      <img src="assets/img/help/MagnifyingGlass.svg" alt="Magnifying Glass" />
+    </button>
+  </div>
+</div>
