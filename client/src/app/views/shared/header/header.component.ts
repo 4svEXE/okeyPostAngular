@@ -20,7 +20,7 @@ export class HeaderComponent {
     { title: "Розпродажі", path: "/sales" },
     { title: "Ціни", path: "/prices" },
     { title: "Допомога", path: "/help" },
-    { title: "Бонуси", path: "/bonuces" },
+    { title: "Бонуси", path: "/bonuses" },
     { title: "Блог", path: "/blog" },
     { title: "Магазини", path: "/shops" },
   ];

@@ -28,14 +28,14 @@ import { SunscribeToUsComponent } from './views/pages/home/sunscribe-to-us/sunsc
 import { SalesComponent } from './views/pages/sales/sales.component';
 import { PricesComponent } from './views/pages/prices/prices.component';
 import { HelpComponent } from './views/pages/help/help.component';
-import { BonucesComponent } from './views/pages/bonuces/bonuces.component';
+import { bonusesComponent } from './views/pages/bonuses/bonuses.component';
 import { BlogComponent } from './views/pages/blog/blog.component';
 import { ShopsComponent } from './views/pages/shops/shops.component';
 import { HowToBuyComponent } from './views/pages/how-to-buy/how-to-buy.component';
 import { PageTitleComponent } from './views/shared/page-title/page-title.component';
 import { SocialBoxComponent } from './views/shared/social-box/social-box.component';
 import { UpButtonComponent } from './views/shared/up-button/up-button.component';
-import { MakeMoneyComponent } from './views/pages/bonuces/make-money/make-money.component';
+import { MakeMoneyComponent } from './views/pages/bonuses/make-money/make-money.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +62,7 @@ import { MakeMoneyComponent } from './views/pages/bonuces/make-money/make-money.
     SalesComponent,
     PricesComponent,
     HelpComponent,
-    BonucesComponent,
+    bonusesComponent,
     BlogComponent,
     ShopsComponent,
     HowToBuyComponent,

@@ -6,7 +6,7 @@ import { HowToBuyComponent } from "./views/pages/how-to-buy/how-to-buy.component
 import { SalesComponent } from "./views/pages/sales/sales.component";
 import { PricesComponent } from "./views/pages/prices/prices.component";
 import { HelpComponent } from "./views/pages/help/help.component";
-import { BonucesComponent } from "./views/pages/bonuces/bonuces.component";
+import { bonusesComponent } from "./views/pages/bonuses/bonuses.component";
 import { BlogComponent } from "./views/pages/blog/blog.component";
 import { ShopsComponent } from "./views/pages/shops/shops.component";
 
@@ -16,7 +16,7 @@ const routes: Routes = [
   { path: "sales", component: SalesComponent },
   { path: "prices", component: PricesComponent },
   { path: "help", component: HelpComponent },
-  { path: "bonuces", component: BonucesComponent }, // bonuses
+  { path: "bonuses", component: bonusesComponent }, // bonuses
   { path: "blog", component: BlogComponent },
   { path: "shops", component: ShopsComponent },
 ];
