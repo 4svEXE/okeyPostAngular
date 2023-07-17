@@ -1,7 +1,7 @@
 /* Variables */
 
 $accordion: 700px; // Accordion width
-$panelheight: 200px; // Applied to "max-height" - Must be larger than the panel content
+$panelheight: 100vh; // Applied to "max-height" - Must be larger than the panel content
 $items: 5; // Specify the number of panels present in HTML
 
 $panel_bg: darken(white, 5%); // bg color of the accordion panel
@@ -14,7 +14,7 @@ $border_col: darken($label_bg, 40%);
 $label_color: black;
 // Don't edit above
 
-$gutter: 15px; // General padding around items
+$gutter: 6px; // General padding around items
 $ts: all 0.2s ease; // General transition effect
 
 /* Styles */
@@ -86,8 +86,8 @@ h2 {
           color: var(--2, #222);
           font-size: 16px;
           font-style: normal;
-          font-weight: 700;
-          line-height: 16px; /* 88.889% */
+          font-weight: 500;
+          line-height: 24px; /* 88.889% */
           padding: 20px 0;
         }
       }
@@ -102,8 +102,8 @@ h2 {
             color: $label_color;
           }
 
-          img{
-            transition: .3s;
+          img {
+            transition: 0.3s;
             transform: rotate(-90deg);
           }
         }
@@ -117,5 +117,32 @@ h2 {
         }
       }
     }
+  }
+}
+
+.error-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f8f8;
+  border: 2px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  .error-message {
+    text-align: center;
+  }
+
+  .error-message h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .error-message p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 0;
   }
 }

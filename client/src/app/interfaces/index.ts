@@ -30,3 +30,9 @@ export interface BonuseInterface{
   text: string,
   image: string,
 }
+
+export interface FAQInterface {
+  title: string,
+  text: string,
+  rubric: string
+}
