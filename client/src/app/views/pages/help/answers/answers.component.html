@@ -1,10 +1,9 @@
 <div class="flex flex-col" *ngFor="let question of filteredFAQ">
+  
   <div class="flex flex-col" *ngIf="question.rubric !== currentRubric">
     <h2>{{question.rubric}}</h2>
     {{setCurrentRubric(question.rubric)}}
   </div>
-
-  <!-- елементи відповіді -->
 
   <div class="flex flex-col">
     <div class="block">

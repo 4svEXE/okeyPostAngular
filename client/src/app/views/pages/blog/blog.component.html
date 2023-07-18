@@ -1,1 +1,36 @@
-<p>blog works!</p>
+<app-page-title
+  [currentPage]="'Блог'"
+  [title]="'Блог'"
+  [describition]="''"
+  [popupTarget]="''"
+  [popupButtonTitle]="''"
+/>
+
+<div class="container content-block">
+  <div class="grid grid-cols-1 gap-10 lg:grid-cols-3 mt-10 lg:mt-20">
+    <div
+      *ngFor="let post of posts | paginate: { itemsPerPage: 12, currentPage: page }"
+      class="blog-post-card"
+    >
+      <img src="{{imgPath + post.image}}" alt="{{post.title}}" />
+      <h4>{{post.title}}</h4>
+
+      <div class="flex justify-between">
+        <span>{{post.dateOfPublication}}</span>
+
+        <div class="flex items-center">
+          <img src="assets/img/blog/Clock.svg" alt="Clock" />
+          <span>
+            Читати: {{post.readtime}} хвилин
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex w-full justify-center my-4">
+    <pagination-controls (pageChange)="page = $event" />
+  </div>
+</div>
+
+<app-social-box />

@@ -36,3 +36,10 @@ export interface FAQInterface {
   text: string,
   rubric: string
 }
+
+export interface PostInterface {
+  title: string;
+  image: string;
+  readtime: string;
+  dateOfPublication: string;
+}

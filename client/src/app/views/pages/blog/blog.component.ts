@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { PostInterface } from './../../../interfaces/index';
+import { Posts } from 'src/app/db/posts';
+
 
 @Component({
   selector: 'app-blog',
@@ -6,5 +9,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./blog.component.scss']
 })
 export class BlogComponent {
+  imgPath: string = "assets/img/blog/";
+  // Current page in pagination
+  page: number = 1;
+  posts: PostInterface[] = Posts;
 
 }
