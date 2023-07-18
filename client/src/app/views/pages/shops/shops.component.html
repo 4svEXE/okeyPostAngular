@@ -1,1 +1,29 @@
-<p>shops works!</p>
+<app-page-title
+  [currentPage]="'Блог'"
+  [title]="'Блог'"
+  [describition]="''"
+  [popupTarget]="''"
+  [popupButtonTitle]="''"
+/>
+
+<div class="container content-block">
+  <div
+    class="grid grid-cols-1 gap-5 lg:grid-cols-5 md:grid-cols-4 sm:lg:grid-cols-3 xs:lg:grid-cols-2 "
+  >
+    <a
+      *ngFor="let brand of brands | paginate: { itemsPerPage: 10, currentPage: page }"
+      class="shadow-box shop-item"
+      href="{{brand.url}}"
+      target="_blank"
+    >
+        <img src="{{imgPath + brand.image}}" alt="{{brand.title}}">
+        <h6>{{brand.title}}</h6>
+    </a>
+  </div>
+
+  <div class="flex w-full justify-center my-4">
+    <pagination-controls (pageChange)="page = $event" />
+  </div>
+</div>
+
+<app-social-box />

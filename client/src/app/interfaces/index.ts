@@ -43,3 +43,9 @@ export interface PostInterface {
   readtime: string;
   dateOfPublication: string;
 }
+
+export interface BrandInterface {
+  title: string;
+  image: string;
+  url: string;
+}

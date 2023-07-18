@@ -1,0 +1,19 @@
+.shop-item {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  min-height: 200px;
+  align-items: center;
+  justify-content: space-between;
+
+  img {
+    width: 100%;
+  }
+  h6 {
+    color: var(--1, #1f2428);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 200% */
+  }
+}
