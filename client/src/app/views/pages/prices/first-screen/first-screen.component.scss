@@ -1,0 +1,31 @@
+.prices-item {
+  display: flex;
+  flex-direction: column;
+
+  img {
+    height: 293px;
+  }
+  h3 {
+    color: var(--1, #1f2428);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px; /* 150% */
+    margin-top: 40px;
+  }
+  p {
+    padding: 22px 0;
+    color: var(--1, #1f2428);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 36px; /* 200% */
+  }
+  button {
+    border-radius: 8px;
+    background: var(--8, #41b7e9);
+    max-width: 180px;
+    height: 56px;
+    color: #fff
+  }
+}

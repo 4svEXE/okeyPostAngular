@@ -1,1 +1,17 @@
-<p>prices works!</p>
+<div class="flex flex-col justify-center items-center">
+  <app-page-title
+    [currentPage]="'Ціни'"
+    [title]="'Послуги доставки з Великобританії'"
+    [describition]="''"
+    [popupTarget]="''"
+    [popupButtonTitle]="''"
+  />
+
+  <div class="container content-block">
+    <app-first-screen-prices />
+
+    <app-delivery-calculator />
+  </div>
+
+  <app-social-box />
+</div>
