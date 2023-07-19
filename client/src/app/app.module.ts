@@ -41,6 +41,7 @@ import { MakeMoneyComponent } from "./views/pages/bonuses/make-money/make-money.
 import { SearchFormComponent } from "./views/pages/help/search-form/search-form.component";
 import { AnswersComponent } from "./views/pages/help/answers/answers.component";
 import { DeliveryCalculatorComponent } from "./views/shared/delivery-calculator/delivery-calculator.component";
+import { DeliveryOptionsComponent } from './views/pages/prices/delivery-options/delivery-options.component';
 
 @NgModule({
   declarations: [
@@ -79,6 +80,7 @@ import { DeliveryCalculatorComponent } from "./views/shared/delivery-calculator/
     SearchFormComponent,
     AnswersComponent,
     DeliveryCalculatorComponent,
+    DeliveryOptionsComponent,
   ],
   imports: [
     BrowserModule,
