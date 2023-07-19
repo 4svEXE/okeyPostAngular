@@ -13,10 +13,10 @@ export interface ReviewInterface {
 }
 
 export interface BuyStepsInterface {
-  count: string, // "01"
-  title: string, // 
-  text: string, // 
-  image: string, // "1.svg"
+  count: string; // "01"
+  title: string; //
+  text: string; //
+  image: string; // "1.svg"
 }
 
 export interface SalesPostInterface {
@@ -25,16 +25,16 @@ export interface SalesPostInterface {
   image: string;
 }
 
-export interface BonuseInterface{
-  title: string,
-  text: string,
-  image: string,
+export interface BonuseInterface {
+  title: string;
+  text: string;
+  image: string;
 }
 
 export interface FAQInterface {
-  title: string,
-  text: string,
-  rubric: string
+  title: string;
+  text: string;
+  rubric: string;
 }
 
 export interface PostInterface {
@@ -48,4 +48,10 @@ export interface BrandInterface {
   title: string;
   image: string;
   url: string;
+}
+
+export interface WarehouseServiceIntrface {
+  title: string;
+  details: string;
+  value: string;
 }

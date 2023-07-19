@@ -42,6 +42,7 @@ import { SearchFormComponent } from "./views/pages/help/search-form/search-form.
 import { AnswersComponent } from "./views/pages/help/answers/answers.component";
 import { DeliveryCalculatorComponent } from "./views/shared/delivery-calculator/delivery-calculator.component";
 import { DeliveryOptionsComponent } from './views/pages/prices/delivery-options/delivery-options.component';
+import { WarehouseServicesComponent } from './views/pages/prices/warehouse-services/warehouse-services.component';
 
 @NgModule({
   declarations: [
@@ -81,6 +82,7 @@ import { DeliveryOptionsComponent } from './views/pages/prices/delivery-options/
     AnswersComponent,
     DeliveryCalculatorComponent,
     DeliveryOptionsComponent,
+    WarehouseServicesComponent,
   ],
   imports: [
     BrowserModule,
