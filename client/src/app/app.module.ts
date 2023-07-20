@@ -45,6 +45,8 @@ import { DeliveryOptionsComponent } from './views/pages/prices/delivery-options/
 import { WarehouseServicesComponent } from './views/pages/prices/warehouse-services/warehouse-services.component';
 import { ShoppingWithOpratorsComponent } from './views/pages/prices/shopping-with-oprators/shopping-with-oprators.component';
 import { ShoppingFormComponent } from './views/pages/prices/shopping-with-oprators/shopping-form/shopping-form.component';
+import { AdditionalPackingComponent } from './views/pages/prices/additional-packing/additional-packing.component';
+import { PricesInsoranceComponent } from './views/pages/prices/prices-insorance/prices-insorance.component';
 
 @NgModule({
   declarations: [
@@ -87,6 +89,8 @@ import { ShoppingFormComponent } from './views/pages/prices/shopping-with-oprato
     WarehouseServicesComponent,
     ShoppingWithOpratorsComponent,
     ShoppingFormComponent,
+    AdditionalPackingComponent,
+    PricesInsoranceComponent,
   ],
   imports: [
     BrowserModule,

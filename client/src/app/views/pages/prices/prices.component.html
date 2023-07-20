@@ -1,12 +1,12 @@
-<div class="flex flex-col justify-center items-center">
-  <app-page-title
-    [currentPage]="'Ціни'"
-    [title]="'Послуги доставки з Великобританії'"
-    [describition]="''"
-    [popupTarget]="''"
-    [popupButtonTitle]="''"
-  />
+<app-page-title
+  [currentPage]="'Ціни'"
+  [title]="'Послуги доставки з Великобританії'"
+  [describition]="''"
+  [popupTarget]="''"
+  [popupButtonTitle]="''"
+/>
 
+<div class="flex flex-col justify-center items-center">
   <div class="container content-block">
     <app-first-screen-prices />
 
@@ -17,10 +17,16 @@
     <app-warehouse-services />
 
     <app-shopping-with-oprators />
-    
   </div>
 
- 
+  <app-shopping-form />
 
-  <app-social-box />
+  <div class="container content-block">
+    <app-prices-insorance />
+
+    <app-additional-packing />
+  </div>
+
 </div>
+
+<app-social-box />

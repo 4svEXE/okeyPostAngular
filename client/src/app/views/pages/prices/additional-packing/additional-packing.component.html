@@ -1,0 +1,25 @@
+<div class="mt-10 md:mt-20">
+  <h2 class="mb-[50px] max-w-[100%] md:max-w-[60%]">
+    Додаткова упаковка:
+  </h2>
+
+  <div class="grid grid-cols-1 lg:grid-cols-2">
+    <div class="flex" *ngFor="let item of additional">
+      <!-- item -->
+      <div
+        class="warehouse-services-item shadow-box grid-cols-1 lg:grid-cols-3 xl:grid-cols-5"
+      >
+        <div
+          class="item col-span-1 lg:col-span-2 xl:col-span-3 lg:justify-start"
+        >
+          <h4>{{item.title}}</h4>
+        </div>
+
+        <div class="item lg:border-l border-l-0 border-t lg:border-t-0">
+          <strong>{{item.value}}</strong>
+        </div>
+      </div>
+      <!-- item -->
+    </div>
+  </div>
+</div>
