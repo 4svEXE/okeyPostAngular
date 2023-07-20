@@ -43,6 +43,8 @@ import { AnswersComponent } from "./views/pages/help/answers/answers.component";
 import { DeliveryCalculatorComponent } from "./views/shared/delivery-calculator/delivery-calculator.component";
 import { DeliveryOptionsComponent } from './views/pages/prices/delivery-options/delivery-options.component';
 import { WarehouseServicesComponent } from './views/pages/prices/warehouse-services/warehouse-services.component';
+import { ShoppingWithOpratorsComponent } from './views/pages/prices/shopping-with-oprators/shopping-with-oprators.component';
+import { ShoppingFormComponent } from './views/pages/prices/shopping-with-oprators/shopping-form/shopping-form.component';
 
 @NgModule({
   declarations: [
@@ -83,6 +85,8 @@ import { WarehouseServicesComponent } from './views/pages/prices/warehouse-servi
     DeliveryCalculatorComponent,
     DeliveryOptionsComponent,
     WarehouseServicesComponent,
+    ShoppingWithOpratorsComponent,
+    ShoppingFormComponent,
   ],
   imports: [
     BrowserModule,
