@@ -2,7 +2,7 @@
   padding: 26px;
   margin-bottom: 20px;
 
-  .flex{
+  .flex {
     padding: 20px;
   }
 
@@ -37,4 +37,13 @@
     font-weight: 700;
     line-height: 16px; /* 80% */
   }
+}
+
+h2 {
+  max-width: 60%;
+  color: var(--1, #1f2428);
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px;
 }
