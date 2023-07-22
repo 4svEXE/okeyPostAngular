@@ -14,4 +14,9 @@ export class BlogComponent {
   page: number = 1;
   posts: PostInterface[] = Posts;
 
+  pageChangeHandler(event: any){
+    this.page = event;
+    window.scrollTo(0, 0);
+  }
+
 }

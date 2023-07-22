@@ -1,111 +1,116 @@
-<form class="content-block" [formGroup]="myForm">
-  <h2 class="mb-[50px] max-w-[100%] md:max-w-[60%]">
-    Онлайн-калькулятор вартості доставки товару
-  </h2>
+<div class="content-block px-0 md:px-[10%]">
+  <form class="" [formGroup]="myForm">
+    <h2 class="mb-[50px] max-w-[100%] md:max-w-[60%]">
+      Онлайн-калькулятор вартості доставки товару
+    </h2>
 
-  <p class="mb-4 max-w-[100%] md:max-w-[60%]">
-    Вкажіть необхідні параметри посилки, і калькулятор розрахує приблизну
-    вартість доставки вашої посилки з Англії.
-  </p>
+    <p class="mb-4 max-w-[100%] md:max-w-[60%]">
+      Розрахуйте вартість доставки з Англії до вас додому. Ми отримаємо ваші
+      посилки на складі, при необхідності об'єднаємо кілька доставок в одну та
+      відправимо їх до вас надійно запакованими.
+    </p>
 
-  <div class="shadow-box grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-5">
-    <div class="calculator-item">
-      <h6>Країна:</h6>
+    <div
+      class="shadow-box grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-5"
+    >
+      <div class="calculator-item">
+        <h6>Країна:</h6>
 
-      <div class="flex input-group">
-        <img src="assets/img/delivery-calculator/1.svg" alt="" />
-        <select name="" formControlName="country" value="ua">
-          <option value="ua">Україна</option>
-          <option value="kz">Казахстан</option>
-        </select>
+        <div class="flex input-group">
+          <img src="assets/img/delivery-calculator/1.svg" alt="" />
+          <select name="" formControlName="country" value="ua">
+            <option value="ua">Україна</option>
+            <option value="kz">Казахстан</option>
+          </select>
 
-        <div
-          *ngIf="myForm.get('country')?.invalid && (myForm.get('country')?.dirty || myForm.get('country')?.touched)"
-        >
-          <div *ngIf="myForm.get('country')?.hasError('required')">
-            Виберіть одну з опцій.
+          <div
+            *ngIf="myForm.get('country')?.invalid && (myForm.get('country')?.dirty || myForm.get('country')?.touched)"
+          >
+            <div *ngIf="myForm.get('country')?.hasError('required')">
+              Виберіть одну з опцій.
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="calculator-item">
-      <h6>Місто:</h6>
+      <div class="calculator-item">
+        <h6>Місто:</h6>
 
-      <div class="flex input-group">
-        <img src="assets/img/delivery-calculator/2.svg" alt="" />
-        <input type="text" placeholder="Київ" formControlName="sity" />
+        <div class="flex input-group">
+          <img src="assets/img/delivery-calculator/2.svg" alt="" />
+          <input type="text" placeholder="Київ" formControlName="sity" />
 
-        <div
-          *ngIf="myForm.get('sity')?.invalid && (myForm.get('sity')?.dirty || myForm.get('sity')?.touched)"
-        >
-          <div *ngIf="myForm.get('sity')?.errors?.['pattern']">
-            Введіть тільки числове значення.
+          <div
+            *ngIf="myForm.get('sity')?.invalid && (myForm.get('sity')?.dirty || myForm.get('sity')?.touched)"
+          >
+            <div *ngIf="myForm.get('sity')?.errors?.['pattern']">
+              Введіть тільки числове значення.
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="calculator-item">
-      <h6>Індекс:</h6>
+      <div class="calculator-item">
+        <h6>Індекс:</h6>
 
-      <div class="flex input-group">
-        <img src="assets/img/delivery-calculator/3.svg" alt="" />
-        <input
-          pattern="^\d+$"
-          type="text"
-          placeholder="Введіть індекс"
-          formControlName="index"
-        />
+        <div class="flex input-group">
+          <img src="assets/img/delivery-calculator/3.svg" alt="" />
+          <input
+            pattern="^\d+$"
+            type="text"
+            placeholder="Введіть індекс"
+            formControlName="index"
+          />
 
-        <div
-          class="error-message"
-          *ngIf="myForm.get('index')?.invalid && (myForm.get('index')?.dirty || myForm.get('index')?.touched)"
-        >
-          <div *ngIf="myForm.get('index')?.errors?.['pattern']">
-            Введіть тільки числове значення.
+          <div
+            class="error-message"
+            *ngIf="myForm.get('index')?.invalid && (myForm.get('index')?.dirty || myForm.get('index')?.touched)"
+          >
+            <div *ngIf="myForm.get('index')?.errors?.['pattern']">
+              Введіть тільки числове значення.
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="calculator-item">
-      <h6>Вага посилки (кг):</h6>
+      <div class="calculator-item">
+        <h6>Вага посилки (кг):</h6>
 
-      <div class="flex input-group">
-        <img src="assets/img/delivery-calculator/4.svg" alt="" />
-        <input
-          pattern="^\d+$"
-          type="text"
-          placeholder="0.5"
-          formControlName="weight"
-        />
+        <div class="flex input-group">
+          <img src="assets/img/delivery-calculator/4.svg" alt="" />
+          <input
+            pattern="^\d+$"
+            type="text"
+            placeholder="0.5"
+            formControlName="weight"
+          />
 
-        <div
-          class="error-message"
-          *ngIf="myForm.get('weight')?.invalid && (myForm.get('weight')?.dirty || myForm.get('weight')?.touched)"
-        >
-          <div *ngIf="myForm.get('weight')?.errors?.['pattern']">
-            Введіть тільки числове значення.
+          <div
+            class="error-message"
+            *ngIf="myForm.get('weight')?.invalid && (myForm.get('weight')?.dirty || myForm.get('weight')?.touched)"
+          >
+            <div *ngIf="myForm.get('weight')?.errors?.['pattern']">
+              Введіть тільки числове значення.
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="calculator-item">
-      <h6>Додаткові послуги:</h6>
+      <div class="calculator-item">
+        <h6>Додаткові послуги:</h6>
 
-      <div class="flex input-group">
-        <img src="assets/img/delivery-calculator/5.svg" alt="" />
-        <select name="additional" formControlName="additional">
-          <option value="">Немає</option>
-          <option value="reinforced_packaging">Посилена упаковка</option>
-        </select>
+        <div class="flex input-group">
+          <img src="assets/img/delivery-calculator/5.svg" alt="" />
+          <select name="additional" formControlName="additional">
+            <option value="">Немає</option>
+            <option value="reinforced_packaging">Посилена упаковка</option>
+          </select>
+        </div>
       </div>
-    </div>
 
-    <button class="green-button small-button mt-10">
-      Розрахувати
-    </button>
-  </div>
-</form>
+      <button class="green-button small-button mt-10">
+        Розрахувати
+      </button>
+    </div>
+  </form>
+</div>

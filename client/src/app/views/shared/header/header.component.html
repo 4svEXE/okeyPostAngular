@@ -14,7 +14,7 @@
   class="w-full flex items-center flex-col justify-around xl:flex-row"
   [class.active]="isActiveHeader"
 >
-  <div routerLink="/" class="logo">
+  <div routerLink="/" class="logo mr-4" (click)="isActiveHeader = !isActiveHeader">
     <img src="assets/img/header/logo.svg" alt="logo" />
   </div>
 

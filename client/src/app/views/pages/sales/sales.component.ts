@@ -12,6 +12,11 @@ export class SalesComponent {
 
   // Current page in pagination
   page: number = 1;
+  
+  pageChangeHandler(event: any){
+    this.page = event;
+    window.scrollTo(0, 0);
+  }
 
   salesPosts: SalesPostInterface[] = SalesPosts;
 }

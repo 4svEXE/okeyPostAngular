@@ -10,5 +10,11 @@ import { Brands } from 'src/app/db/brands';
 export class ShopsComponent {
   imgPath: string = "assets/img/shops/";
   page: number = 1;
+
+  pageChangeHandler(event: any){
+    this.page = event;
+    window.scrollTo(0, 0);
+  }
+
   brands: BrandInterface[] = Brands;
 }

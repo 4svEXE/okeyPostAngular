@@ -8,7 +8,7 @@
 
 <div class="container content-block">
   <div
-    class="grid grid-cols-1 gap-5 lg:grid-cols-5 md:grid-cols-4 sm:lg:grid-cols-3 xs:lg:grid-cols-2 "
+    class="grid grid-cols-2 gap-5 lg:grid-cols-5 md:grid-cols-4 sm:lg:grid-cols-3 xs:lg:grid-cols-2 "
   >
     <a
       *ngFor="let brand of brands | paginate: { itemsPerPage: 10, currentPage: page }"
@@ -22,7 +22,7 @@
   </div>
 
   <div class="flex w-full justify-center my-4">
-    <pagination-controls (pageChange)="page = $event" />
+    <pagination-controls (pageChange)="pageChangeHandler($event)" />
   </div>
 </div>
 
