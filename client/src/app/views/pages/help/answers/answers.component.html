@@ -16,9 +16,7 @@
         </label>
 
         <div>
-          <p class="mt-4 border-t">
-            {{question.text}}
-          </p>
+          <p class="mt-4 border-t" [innerHTML]="question.text"></p>
         </div>
       </div>
     </div>
@@ -26,8 +24,8 @@
 </div>
 
 <div class="error-container" *ngIf="filteredFAQ.length <= 0">
-  <div class="error-message">
+  <div class="error-message-gray">
     <h3>Помилка</h3>
-    <p>За таким словом: {{searchPhrase}} нічого не знайдено.</p>
+    <p>За таким словом: "{{searchPhrase}}" нічого не знайдено.</p>
   </div>
 </div>

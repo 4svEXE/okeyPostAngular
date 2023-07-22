@@ -10,6 +10,7 @@
 // Fonts
 
 // Scss
+@import "./assets/scss/custom-scroll.scss";
 @import "./assets/scss/pagination-custom.scss";
 @import "./assets/scss/swiper.custom.scss";
 @import "./assets/scss/popup.scss";
@@ -204,5 +205,15 @@ a {
       line-height: 16px; /* 100% */
       padding: 12px 0;
     }
+  }
+}
+
+// Numnered list
+ol {
+  list-style-type: decimal; 
+  padding-left: 20px;
+
+  li {
+    margin-bottom: 10px;
   }
 }

@@ -1,0 +1,17 @@
+.help-component{
+    padding: inherit !important;
+
+    h2{
+        padding: inherit !important;
+    }
+}
+
+@media (max-width: 640px) {
+    .help-component{
+        padding: 0 !important;
+
+        h2{
+            padding: 10px 37px;
+        }
+    }
+}

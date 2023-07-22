@@ -1,0 +1,18 @@
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 20px;
+    height: 8px;
+    background-color: #fff;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #00d98180;
+    border-radius: 9em;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #00c97b;
+  }
+
+//   linear-gradient(90deg, # 0%, # 100%)

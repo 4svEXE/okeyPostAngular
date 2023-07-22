@@ -24,6 +24,7 @@
           </select>
 
           <div
+          class="error-message"
             *ngIf="myForm.get('country')?.invalid && (myForm.get('country')?.dirty || myForm.get('country')?.touched)"
           >
             <div *ngIf="myForm.get('country')?.hasError('required')">
@@ -41,10 +42,15 @@
           <input type="text" placeholder="Київ" formControlName="sity" />
 
           <div
+          class="error-message"
             *ngIf="myForm.get('sity')?.invalid && (myForm.get('sity')?.dirty || myForm.get('sity')?.touched)"
           >
             <div *ngIf="myForm.get('sity')?.errors?.['pattern']">
               Введіть тільки числове значення.
+            </div>
+
+            <div *ngIf="myForm.get('sity')?.errors?.['required']">
+              Це поле не може бути порожнім.
             </div>
           </div>
         </div>

@@ -1,7 +1,7 @@
 /* Variables */
 
 $accordion: 700px; // Accordion width
-$panelheight: 100vh; // Applied to "max-height" - Must be larger than the panel content
+$panelheight: 500vh; // Applied to "max-height" - Must be larger than the panel content
 $items: 5; // Specify the number of panels present in HTML
 
 $panel_bg: darken(white, 5%); // bg color of the accordion panel
@@ -130,19 +130,19 @@ h2 {
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
-  .error-message {
+  .error-message-gray {
     text-align: center;
-  }
 
-  .error-message h2 {
-    color: #333;
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
+    h2 {
+      color: #333;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
 
-  .error-message p {
-    color: #666;
-    font-size: 16px;
-    margin-bottom: 0;
+    p {
+      color: #666;
+      font-size: 16px;
+      margin-bottom: 0;
+    }
   }
 }
