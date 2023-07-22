@@ -47,6 +47,7 @@ import { ShoppingWithOpratorsComponent } from './views/pages/prices/shopping-wit
 import { ShoppingFormComponent } from './views/pages/prices/shopping-with-oprators/shopping-form/shopping-form.component';
 import { AdditionalPackingComponent } from './views/pages/prices/additional-packing/additional-packing.component';
 import { PricesInsoranceComponent } from './views/pages/prices/prices-insorance/prices-insorance.component';
+import { AboutMeComponent } from './views/shared/about-me/about-me.component';
 
 @NgModule({
   declarations: [
@@ -91,6 +92,7 @@ import { PricesInsoranceComponent } from './views/pages/prices/prices-insorance/
     ShoppingFormComponent,
     AdditionalPackingComponent,
     PricesInsoranceComponent,
+    AboutMeComponent,
   ],
   imports: [
     BrowserModule,

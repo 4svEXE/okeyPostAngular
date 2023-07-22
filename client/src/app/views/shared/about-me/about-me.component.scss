@@ -1,0 +1,48 @@
+.about-me {
+  max-width: 100vw;
+  width: 98vw;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px solid #222;
+  background-color: #d0ff04;
+  position: sticky;
+  top: 0px;
+  left: 0;
+  right: 0;
+  transition: .3s;
+  overflow: hidden;
+
+  &.closed{
+    transform: translateY(-100%);
+    opacity: .2;
+    position: absolute;
+  }
+  
+  button{
+    width: 40px;height: 40px;
+    border-radius: 50%;
+    background-color: #000;
+    color: #FFF;
+  }
+
+  p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+      display: flex;
+      margin-right: 8px;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 40px;
+        height: 40px;
+        margin-right: 8px;
+      }
+    }
+  }
+}
